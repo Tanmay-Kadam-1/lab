@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+/* Set background color and font family for the entire page */
+body {
+  background-color: #f1f1f1;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Set styles for the form container */
+.form-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+}
+
+/* Set styles for the form fields */
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-field input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Set styles for the submit button */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0062cc;
+}
+
+/* Set styles for the bill container */
+.bill-container {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Set styles for the bill table */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.bill-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Set styles for the bill amount */
+.bill-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Electricity Bill</title>
+
+		<link
+			rel="shortcut icon"
+			href="https://cdn-icons-png.flaticon.com/512/3648/3648755.png"
+			type="image/x-icon"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align: center; color: white; padding: 10px">
+				Electricity Bill
+			</h1>
+			<hr width="40%" style="margin: auto" />
+		</header>
+
+		<!-- Billi -->
+		<section class="bill">
+			<div class="container">
+				<div class="mahav-header">
+					<img
+						src="https://www.mahadiscom.in/wp-content/uploads/2021/03/msedcl_hs_logo_transparent_bg.png"
+						alt=""
+					/>
+
+					<h3 id="head-name">
+						Maharastra State Electricity Distribution Company
+					</h3>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Azadi_Ka_Amrit_Mahotsav_%28English%29_logo.svg/1200px-Azadi_Ka_Amrit_Mahotsav_%28English%29_logo.svg.png"
+						alt=""
+						id="head-75"
+					/>
+				</div>
+				<div class="mahav-desc">
+					<div class="date">
+						<div class="head-date">
+							<h5 id="date-head">Bill of Supply For : JAN-2023</h5>
+						</div>
+					</div>
+					<div class="code">
+						<div class="gst">
+							<p style="font-weight: bolder">Website : www.mahadiscom.in</p>
+							<p>GSTIN of MSEDCL : 4354-4357-4355</p>
+							<p>BILL NO (CGN) : 8787-54-56</p>
+						</div>
+						<div class="code-code">HSN Code : XXX-XXX</div>
+					</div>
+					<hr style="width: 95%" />
+
+					<!-- Div 2  -->
+
+					<div class="code">
+						<div class="gst grahak">
+							<p style="font-weight: bolder">Consumer Number : 17009393839</p>
+							<p>Tanmay Kadam</p>
+							<p>
+								House Number 360, Gorhe Budruk, Sinhagad Road, Pune - 411025
+							</p>
+						</div>
+						<div class="code2">
+							<div class="due-date">
+								Bill Date : 6 Jan 2023 <br />
+								Bill Amount : 1,490/-
+							</div>
+							<div class="due-date">
+								Due Date : 23 Jan 2023 <br />
+								Due Amount : 1,490/-
+							</div>
+						</div>
+					</div>
+					<hr style="width: 95%; margin-left: auto; margin-right: auto" />
+
+					<!-- Div 3 -->
+
+					<div class="section-3">
+						<div class="section-3-info">
+							<div class="units">
+								<div class="unit1">
+									<p>Billing Unit : Bibwewadi</p>
+									<p>Rate Indication : 090 /LT-I (B)</p>
+									<p>Poll Number : 00000000</p>
+									<p>P.C./D.T.S : 1388358</p>
+									<p>Meter Reading : 9873</p>
+									<p>Reading Group : 34</p>
+								</div>
+								<div class="unit2">
+									<p>Billing Unit : Bibwewadi</p>
+									<p>Rate Indication : 090 /LT-I (B)</p>
+									<p>Poll Number : 00000000</p>
+									<p>P.C./D.T.S : 1388358</p>
+									<p>Meter Reading : 9873</p>
+									<p>Reading Group : 34</p>
+								</div>
+							</div>
+							<div class="daywise-reading">
+								<button>Active Reading</button>
+								<button>Past Reading</button>
+								<button>Multiplier</button>
+								<button>Unit</button>
+								<button>Total</button>
+								<br />
+								<button>2892</button>
+								<button>2729</button>
+								<button>1</button>
+								<button>163</button>
+								<button>163</button>
+							</div>
+						</div>
+						<div class="qr-section">
+							<div class="qr-info">
+								<p>Scan this QR Code with BHIM App for UPI Payment</p>
+								<img
+									src="https://www.citypng.com/public/uploads/preview/black-qr-code-barcode-transparent-background-31632177587er1xxdtdtx.png"
+									alt=""
+								/>
+							</div>
+							<p>
+								If paying through QR code, payment Prompt payment applicable as
+								on date Payment discount or delay size in next payment will be
+								included.
+							</p>
+						</div>
+					</div>
+					<hr style="width: 95%" />
+
+					<!-- Section - 4 -->
+					<div class="section-4">
+						<div class="section-4-info">
+							<canvas
+								id="myChart"
+								style="width: 100%; max-width: 530px"
+							></canvas>
+						</div>
+						<div class="helpline-section">
+							<p>24*7 Helpline Number</p>
+							<p>
+								MSEDCL Call Center: <br />
+								18002333435 <br />
+								18002123435 <br />
+								1912
+							</p>
+							<p>www.mahadiscom.in > ConsumerPortal > CGRF</p>
+						</div>
+					</div>
+
+					<!-- Section - 5 -->
+					<hr style="width: 95%" />
+
+					<div class="instrn-section">
+						<p>Important</p>
+						<p>
+							1. Register for e-bill instead of printed bill and get Rs.10
+							Go-Green discount on every bill. To register:-
+							https://pro.mahadiscom.in/GoGreen/gogreen.jsp (GGN number on your
+							printed bill (available in the upper left corner.)
+							<br />
+							2. Pay electricity bill digitally and get 0.25% (up to Rs.500/-)
+							discount (excluding taxes and duties) <br />
+							3. If your mobile number and email address are incorrect, visit
+							here - https://consumerinfo.mahadiscom.in/ <br />
+							4. The next month's reading will usually be on 30-01-2023.
+						</p>
+						<p>www.mahadiscom.in > ConsumerPortal > CGRF</p>
+					</div>
+
+					<hr style="width: 95%" />
+
+					<!-- Section 5 -->
+					<div class="section-5">
+						<form>
+							<label for="units">Enter Number of Units :</label>
+							<input type="number" id="units" name="units" />
+							<button type="button" onclick="calculateBill()">
+								Calculate Bill
+							</button>
+						</form>
+						<button id="result"></button>
+					</div>
+
+					<hr style="width: 95%" />
+
+					<!-- Section 6 -->
+					<div class="section-6">
+						<p>
+							* For queries related to your online payment transactions, please
+							contact helpdesk_pg@mahadiscom.in
+							<br />
+							Any unauthorised changes made in this bill will lead to
+							non-acceptance of the bill.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<h5
+				style="
+					color: white;
+					text-align: center;
+					justify-content: center;
+					height: 100%;
+					font-size: 14px;
+					margin-top: 50px;
+					padding-top: 10px;
+				"
+			>
+				© Tanmay Kadam
+			</h5>
+		</footer>
+		<link rel="stylesheet" href="CSS/styles.css" />
+
+		<script src="./script.js"></script>
+	</body>
+</html>

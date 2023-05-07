@@ -1,0 +1,18 @@
+create database mytemp;
+show databases;
+USE mytemp;
+
+CREATE TABLE Students (
+     StudentRn int NOT NULL,
+     StudentName varchar(30),
+     MSE_WT int,
+	 	 MSE_DAA int,
+		 MSE_OS int,
+	   MSE_CC int,
+     ESE_WT int,
+	   ESE_DAA int,
+	   ESE_OS int,
+	   ESE_CC int,
+     Result int,
+     PRIMARY KEY (StudentRn)
+); 

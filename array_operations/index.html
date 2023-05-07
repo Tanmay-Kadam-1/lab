@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Array</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>SEARCHING and SORTING</h1>
+		<hr>
+		<br>
+		<br>
+		<form>
+			<label>Enter array elements:</label>
+			<div id="array-inputs">
+				<?php for ($i = 0; $i < 5; $i++): ?>
+					<input type="text" name="array[]" required>
+				<?php endfor; ?>
+			</div>
+			<button id="add-input">Add more elements</button>
+			<br>
+			<br><br>
+			<label>Enter element to search:</label>
+			<input type="text" name="search" required>
+			<button id="search-btn" type="submit">Search</button>
+		</form>
+		<div id="result"></div>
+		<div id="sorted-array"></div>
+		<br><br>
+	</div>
+</body>
+</html>
